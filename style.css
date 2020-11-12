@@ -1,0 +1,33 @@
+.hide {
+  display: none;
+}
+
+/* Сохраняет положение текста "По карте клуба" на одном месте независимо от длины строки с ценой */
+.product_price_club_card_text {
+  position: absolute;
+  white-space: nowrap;
+  right: 120px;
+}
+
+/* Строка с ценой по карте выравнивается по низу строки "По карте клуба" */
+.goldPriceAlt,
+.goldPriceMain,
+.product_price_club_card .rouble__i {
+  position: relative;
+  top: 10px;
+}
+
+@media (max-width: 1249px) and (min-width: 1000px) {
+  .product_price_club_card_text {
+    margin-right: 18px;
+  }
+}
+
+@media (max-width: 999px) and (min-width: 0) {
+  .product_price_club_card_text {
+    margin-right: 24px;
+  }
+  .product_price_default {
+    top: 400px;
+  }
+}
